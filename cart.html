@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+	<!-- title -->
+	<title>Carrito</title>
+	<script src="assets/js/script.js"></script>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/img/icon.png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<!-- animate css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+	
+	<!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!--PreLoader Ends-->
+	
+	<!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-center">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="index.html">
+								<img src="assets/img/logo-flaro.png" alt="">
+							</a>
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li class="current-list-item"><a href="index.html">Inicio</a></li>
+								<li><a href="about.html">Sobre Nosotros</a></li>
+								<li><a href="contact.html">Contacto</a></li>
+								<li><a href="shop.html">Tienda</a></li>
+								<li>
+									<div class="header-icons">
+										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<p>Flaro indumentaria</p>
+						<h1>Carrito</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+<!-- Carrito -->
+<div class="cart-section mt-150 mb-150">
+    <div class="container">
+        <div class="row">
+            <!-- Contenido del carrito -->
+            <div class="col-lg-8 col-md-12">
+                <div class="cart-table-wrap">
+                    <table class="cart-table">
+                        <thead class="cart-table-head">
+                            <tr class="table-head-row">
+                                <th class="product-remove"></th>
+                                <th class="product-image">Imagen</th>
+                                <th class="product-name">Nombre</th>
+                                <th class="product-quantity">Cantidad</th>
+                                <th class="product-total">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <!-- Aquí se agregarán dinámicamente los productos del carrito -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Resumen del carrito y botón para finalizar la compra por WhatsApp -->
+            <div class="col-lg-4">
+                <div class="total-section">
+                    <table class="total-table">
+                        <thead class="total-table-head">
+                            <tr class="table-total-row">
+                                <th>Artículo</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-summary">
+                            <!-- Aquí se mostrará dinámicamente el resumen del carrito -->
+                        </tbody>
+                    </table>
+                    <div class="cart-buttons">
+                        <button onclick="finalizarCompraPorWhatsApp()" class="boxed-btn whatsapp-btn">Finalizar compra por WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin del carrito -->
+
+
+<!-- logo carousel -->
+<div class="logo-carousel-section">
+	<h2>QUIENES CONFIARON EN NOSOTROS</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="logo-carousel-inner">
+					<div class="single-logo-item">
+						<img src="assets/img/company-logos/factor-danza.png" alt="">
+					</div>
+					<div class="single-logo-item">
+						<img src="assets/img/company-logos/logo-grupodespertar.png" alt="">
+					</div>
+					<div class="single-logo-item">
+						<img src="assets/img/company-logos/viagym.png" alt="">
+					</div>
+					<div class="single-logo-item">
+						<img src="assets/img/company-logos/sinergia.png" alt="">
+					</div>
+					<div class="single-logo-item">
+						<img src="assets/img/company-logos/formas.png" alt="">
+					</div>
+					<div class="single-logo-item">
+						<img src="assets/img/company-logos/freebody.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end logo carousel -->
+
+<!-- footer -->
+<div class="footer-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-box about-widget">
+					<h2 class="widget-title">Sobre Nosotros</h2>
+					<p>En nuestra empresa nos dedicamos con pasión y dedicación a la creación de indumentaria deportiva de alta calidad. 
+
+						En nuestra búsqueda constante de la excelencia, nos aseguramos de que cada cliente encuentre en nuestras creaciones la combinación ideal de rendimiento, diseño y originalidad. Ya sea que seas un atleta apasionado, un equipo deportivo o simplemente alguien que busca prendas deportivas de calidad, estamos aquí para satisfacer tus necesidades y superar tus expectativas.</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-box get-in-touch">
+					<h2 class="widget-title">Encuéntranos</h2>
+					<ul>
+						<a href="https://maps.app.goo.gl/Cng85wt1YiJynq3h7"><li>Velez Sarsfield 2026, 2170, Casilda, Santa Fe, Argentina.</li></a>
+						<a href="mailto:Flaroindumentaria@gmail.com"><li>Flaroindumentaria@gmail.com</li></a>
+						<a href="wa.link/egril4"><li>+54 3464 553537</li></a>
+					</ul>
+					<div class="col-lg-6 text-right col-md-12">
+						<div class="social-icons">
+							<ul>
+								<li><a href="https://www.facebook.com/FlaRoIndumentaria" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="https://www.instagram.com/flarocasilda/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-box pages">
+					<h2 class="widget-title">Nuestra Página</h2>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="about.html">Sobre Nosotros</a></li>
+						<li><a href="contact.html">Contáctanos</a></li>
+						<li><a href="shop.html">Tienda</a></li>	
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end footer -->
+
+<!-- copyright -->
+<div class="copyright">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-12">
+				<p> &copy Copyrights <script>document.write(new Date().getFullYear())</script>  - <a href="">Brian Ruiz Moreno</a>.  Todos los derechos reservados.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end copyright -->
+	
+
+	<script src="assets/js/cart.js"></script>
+	<!-- jquery -->
+	<script src="assets/js/jquery-1.11.3.min.js"></script>
+	<!-- bootstrap -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- count down -->
+	<script src="assets/js/jquery.countdown.js"></script>
+	<!-- isotope -->
+	<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
+	<!-- waypoints -->
+	<script src="assets/js/waypoints.js"></script>
+	<!-- owl carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- magnific popup -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- mean menu -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- sticker js -->
+	<script src="assets/js/sticker.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

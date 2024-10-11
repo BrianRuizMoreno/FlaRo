@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
+
+	<!-- title -->
+	<title>404!</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<!-- magnific popup -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<!-- animate css -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+	
+	<!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!--PreLoader Ends-->
+	
+	<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <style>
+        /* Estilos básicos, puedes personalizar según tus preferencias */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .product-filters {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product-filters ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .product-filters li {
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        #cart-icon {
+            float: right;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #cart-count {
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        #cart-page {
+            display: none;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-filters">
+        <ul>
+            <li class="active" data-filter="*">Todo</li>
+            <li data-filter=".mujeres">Mujeres</li>
+            <li data-filter=".hombres">Hombres</li>
+            <li data-filter=".kids">Kids</li>
+        </ul>
+    </div>
+
+    <div id="cart-icon" onclick="openCartPage()">
+        Carrito <span id="cart-count">0</span>
+    </div>
+
+    <div class="products">
+        <div class="product mujeres" data-name="Producto 1">
+            <h3>Producto 1</h3>
+            <p>Categoría: Mujeres</p>
+            <button onclick="addToCart('Producto 1')">Añadir al carrito</button>
+        </div>
+
+        <!-- Repite lo siguiente para los demás productos -->
+
+        <div class="product hombres" data-name="Producto 2">
+            <h3>Producto 2</h3>
+            <p>Categoría: Hombres</p>
+            <button onclick="addToCart('Producto 2')">Añadir al carrito</button>
+        </div>
+
+        <!-- Repite lo siguiente para los demás productos -->
+
+        <div class="product kids" data-name="Producto 3">
+            <h3>Producto 3</h3>
+            <p>Categoría: Kids</p>
+            <button onclick="addToCart('Producto 3')">Añadir al carrito</button>
+        </div>
+
+        <!-- Repite lo anterior para los demás productos -->
+
+    </div>
+
+    <!-- Página del carrito -->
+    <div id="cart-page">
+        <!-- Contenido del carrito se mostrará aquí -->
+        <p>Esta es la página del carrito. Añadiré más contenido después.</p>
+    </div>
+
+    <script>
+        let cartItems = [];
+
+        function addToCart(productName) {
+            cartItems.push(productName);
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            const cartCountElement = document.getElementById('cart-count');
+            cartCountElement.innerText = cartItems.length;
+        }
+
+        function openCartPage() {
+            const cartPage = document.getElementById('cart-page');
+            cartPage.style.display = 'block';
+
+            // Puedes agregar más lógica para mostrar los productos en el carrito
+        }
+    </script>
+
+</body>
+</html>
+
+	
+	<!-- jquery -->
+	<script src="assets/js/jquery-1.11.3.min.js"></script>
+	<!-- bootstrap -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- count down -->
+	<script src="assets/js/jquery.countdown.js"></script>
+	<!-- isotope -->
+	<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
+	<!-- waypoints -->
+	<script src="assets/js/waypoints.js"></script>
+	<!-- owl carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- magnific popup -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- mean menu -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- sticker js -->
+	<script src="assets/js/sticker.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+	
+	</body>
+</html>
